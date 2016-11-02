@@ -40,12 +40,12 @@ void cAsteroid::update(double deltaTime)
 
 	if (currentSpritePos.x <= 0 || currentSpritePos.x >= (1024 - this->getSpriteDimensions().w))
 	{
-		this->setSpriteTranslation({ this->getSpriteTranslation().x * (-1), this->getSpriteTranslation().y });
+		this->setSpriteTranslation({ this->getSpriteTranslation().x * (-1.1), this->getSpriteTranslation().y });
 	}
 
 	if (currentSpritePos.y <= 0 || currentSpritePos.y >= (700 - this->getSpriteDimensions().h))
 	{
-		this->setSpriteTranslation({ this->getSpriteTranslation().x, this->getSpriteTranslation().y * (-1) });
+		this->setSpriteTranslation({ this->getSpriteTranslation().x, this->getSpriteTranslation().y * (-1.1) });
 	}
 }
 /*
